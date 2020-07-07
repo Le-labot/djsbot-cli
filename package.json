@@ -1,0 +1,40 @@
+{
+  "name": "djsbot-cli",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "./bin/main.js",
+  "bin": {
+    "muse": "./bin/main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le-labot/djsbot-cli.git"
+  },
+  "keywords": [],
+  "author": "SlayerMonkey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Le-labot/djsbot-cli/issues"
+  },
+  "homepage": "https://github.com/Le-labot/djsbot-cli#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.18",
+    "@types/nodemon": "^1.19.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0"
+  }
+}
