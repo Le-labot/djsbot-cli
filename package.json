@@ -5,12 +5,16 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "main": "./bin/main.js",
+  "main": "./bin/djsbot-cli",
   "bin": {
-    "muse": "./bin/main.js"
+    "djsbot": "./bin/djsbot-cli"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:gulp": "gulp build",
+    "watch:gulp": "gulp watch",
+    "watch": "npm run watch:gulp -s",
+    "build": "npm run build:gulp -s",
+    "start": "node.cmd ./bin/djsbot-cli"
   },
   "repository": {
     "type": "git",

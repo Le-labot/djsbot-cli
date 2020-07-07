@@ -14,6 +14,8 @@ const project = gulpTS.createProject("tsconfig.json");
 
 function build() {
     del.sync(["./build/**/*.*"]);
+    src("./src/**/*.js").pipe(dest("build/"))
+
     const tsCompile = src("./src/**/*.ts")
     .pipe(gulpSourcemaps.init())
     .pipe(project());
@@ -29,6 +31,7 @@ function build() {
 
 function watch() {
     gulp.watch(["./src/**/*.ts"], build);
+    gulp.watch(["./src/**/*.js"], build);
 }
 
 function start() {
